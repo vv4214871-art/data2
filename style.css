@@ -1,0 +1,85 @@
+:root {
+    --bg: #0a0a0a;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --heart: #ff4d4d;
+}
+
+body, html {
+    margin: 0; padding: 0;
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#date-badge {
+    position: fixed; top: 30px; left: 30px;
+    font-size: 0.8rem; letter-spacing: 5px;
+    color: var(--gold); z-index: 100;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    padding: 0 10%; text-align: center;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Day 2 Standout Text */
+.highlight-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; /* Large and Bold as requested */
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.gold-accent { color: var(--gold); }
+.heart { color: var(--heart); }
+
+.interaction-area { margin-top: 50px; }
+
+.question {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Reference Style Button */
+.continue-btn {
+    background: var(--white);
+    color: var(--bg);
+    border: none;
+    padding: 18px 60px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.continue-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.final-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.footer-note {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.hidden { display: none; opacity: 0; transform: translateY(50px); }
+.visible { display: flex; opacity: 1; transform: translateY(0); }
